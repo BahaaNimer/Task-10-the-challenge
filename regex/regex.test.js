@@ -7,7 +7,7 @@ characters (no numbers and symbols) and it should end with capital A else return
 
 function capitalA(s) {
   // Add your logic.
-  let regex = /[a-z][A-Z]A$/igm;
+  let regex = /[a-zA-Z-]+ +[a-zA-Z-]+ +A$/;
   let result = regex.test(s);
   return result;
 }
@@ -18,8 +18,8 @@ which end with io (example@example.io) */
 
 function ioEmail(email) {
   // Add your logic.
-  let regex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/igm;
-  let result = regex.test(s);
+  let regex = /^[a-zA-Z0-9]+@[a-zA-Z0-9-]+(?:\.[io]+)*$/;
+  let result = regex.test(email);
   return result;
   return;
 }
