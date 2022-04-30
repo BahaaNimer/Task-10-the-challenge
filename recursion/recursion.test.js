@@ -103,7 +103,7 @@ describe("Test pow", () => {
 });
 
 describe("Test fibonacci", () => {
-  test.skip("It should implement fibonacci series logic", () => {
+  test("It should implement fibonacci series logic", () => {
     expect(fibonacci(0)).toStrictEqual(0);
     expect(fibonacci(1)).toStrictEqual(1);
     expect(fibonacci(2)).toStrictEqual(1);
